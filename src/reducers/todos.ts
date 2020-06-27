@@ -1,6 +1,6 @@
-import { Todo, FetchTodosAction } from '../actions'
-import { ActionTypes } from '../actions/types'
+import { Todo, FetchTodosAction, ActionTypes } from '../actions'
 
+// type annotation not 100% accurate, redux may dispatch other actions than FetchTodos
 export const todosReducer = (state: Todo[] = [], action: FetchTodosAction) => {
   switch (action.type) {
     case ActionTypes.fetchTodos:
