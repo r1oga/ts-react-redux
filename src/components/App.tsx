@@ -9,6 +9,10 @@ interface AppProps {
   deleteTodo: typeof deleteTodo
 }
 
+interface AppState {
+  loading: boolean
+}
+
 class _App extends Component<AppProps> {
   state = { loading: false }
 
